@@ -8,7 +8,7 @@
 
 ### Features.
 1. **Income & Expense Tracking**: Easily log and manage your income and expenses.
-2. **Graphical Representation**: View income and expense data over time using line graphs or bar charts.
+2. **Graphical Representation**: View income and expense data over time using line graphs.
 3. **Summary Overview**: Get a quick summary of your total income, expenses, and balance.
 
 ### Dependencies.
@@ -20,7 +20,13 @@ This project requires the following Python libraries:
 
 ### Screenshots.
 
+https://github.com/manoramsubedi/Personal_Finance_Tracker/blob/main/screenshots/ss0.JPG
 
+https://github.com/manoramsubedi/Personal_Finance_Tracker/blob/main/screenshots/ss1.JPG
+
+https://github.com/manoramsubedi/Personal_Finance_Tracker/blob/main/screenshots/ss2.JPG
+
+https://github.com/manoramsubedi/Personal_Finance_Tracker/blob/main/screenshots/ss3.JPG
 
 
 ##### Check out my portfolio: 
