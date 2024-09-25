@@ -4,8 +4,10 @@ import csv
 from datetime import datetime
 from data_entry import get_amount, get_category, get_date, get_description
 
+
 class CSV:
     CSV_FILE = "finance_data.csv"
+    FORMAT = "%d-%m-%Y"
     COLUMS = ["date", "amount", "category", "description"]
 
     @classmethod # Access to class but not with an instance of the class
@@ -31,8 +33,36 @@ class CSV:
 
     @classmethod
     def get_transaction(cls, start_date, end_date):
-        pass
-       # df = pd.read_csv(cls.CSV_FILE)
+        df = pd.read_csv(cls.CSV_FILE)
+
+        # CONVERTING INTO DATETIME FORMAT
+        df['date'] = pd.to_datetime(df['date'], format=CSV.FORMAT)
+        start_date = datetime.strptime(start_date, CSV.FORMAT)
+        end_date = datetime.strptime(end_date, CSV.FORMAT)
+
+        mask = (df['date'] >= start_date) & (df['date' <= end_date]):
+        filtered_df = df.loc[mask]
+
+        if filtered_df.empty:
+            print("No Transaction Found!!")
+        else:
+            print(
+                f"Transactions from {start_date.strftime(CSV.FORMAT)} to {end_date.strftime(CSV.FORMAT)}"
+                )
+            print(filtered_df.to_string(
+                index=False, formatters={"date": lambda x: x.strftime(CSV.FORMAT)})
+                )
+
+            total_income = filtered_df[filtered_df["cactegory"] == "Income"]["amount"].sum()
+            total_expense = filtered_df[filtered_df["category"] == "Expense"]["amount"].sum()
+
+            print("\n == SUMMARY ==")
+            print(f"Total Income: ${total_income:.2f}")
+            print(f"Total Expense: ${total_expense:.2f}")
+            print(f"Net Saving: ${(total_income - total_expense):.2f}")
+
+        return filtered_df
+
 
 def add():
     CSV.initialize_csv()
