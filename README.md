@@ -20,13 +20,11 @@ This project requires the following Python libraries:
 
 ### Screenshots.
 
-https://github.com/manoramsubedi/Personal_Finance_Tracker/blob/main/screenshots/ss0.JPG
+![image_alt](https://github.com/manoramsubedi/Personal_Finance_Tracker/blob/8aab2a7ea43301409e79715f7e819a36d2740723/screenshots/ss0.JPG)
+![image_alt](https://github.com/manoramsubedi/Personal_Finance_Tracker/blob/8aab2a7ea43301409e79715f7e819a36d2740723/screenshots/ss1.JPG)
+![image_alt](https://github.com/manoramsubedi/Personal_Finance_Tracker/blob/8aab2a7ea43301409e79715f7e819a36d2740723/screenshots/ss2.JPG)
+![image_alt](https://github.com/manoramsubedi/Personal_Finance_Tracker/blob/8aab2a7ea43301409e79715f7e819a36d2740723/screenshots/ss3.JPG)
 
-https://github.com/manoramsubedi/Personal_Finance_Tracker/blob/main/screenshots/ss1.JPG
-
-https://github.com/manoramsubedi/Personal_Finance_Tracker/blob/main/screenshots/ss2.JPG
-
-https://github.com/manoramsubedi/Personal_Finance_Tracker/blob/main/screenshots/ss3.JPG
 
 
 ##### Check out my portfolio: 
